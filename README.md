@@ -35,7 +35,7 @@ https://github.com/ricaun/arduino-DuinoCoin <br> https://github.com/JK-Rolling/D
 
 # Reset Button:
 1. Connect your momentary push button GND to pin D5 (or any pin support external interrupt, addjust your code then).
-2. After success reset settings
+2. After success reset settings AP "DuinoMinerConfig" will show once again.
 
 # TODO:
 1. Custom Styling
