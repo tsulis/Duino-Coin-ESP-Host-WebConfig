@@ -23,7 +23,7 @@ void DuinoCoin_setup()
   
   
   unsigned long time = (unsigned long) getTrueRotateRandomByte() * 1000 + (unsigned long) getTrueRotateRandomByte();
-  delayMicroseconds(20*time+randPadding);
+  delayMicroseconds(time+randPadding);
   
   Wire.begin();
   for (int address = 1; address < 127; address++ )

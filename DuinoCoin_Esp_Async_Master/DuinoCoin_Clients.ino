@@ -21,7 +21,7 @@
 #include <WiFiClient.h>
 #endif
 
-#define CLIENTS 10
+#define CLIENTS 32
 
 #define CLIENT_CONNECT_EVERY 30000
 #define CLIENT_TIMEOUT_CONNECTION 30000
