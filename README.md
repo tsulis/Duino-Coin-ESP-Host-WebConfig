@@ -18,6 +18,8 @@ https://github.com/ricaun/arduino-DuinoCoin <br> https://github.com/JK-Rolling/D
 1. This is very early release version, hiccups, ups and down are expected.
 2. There is no input validation in UI WebConfig
 3. I dont use external services for saving credential, completely local on your device.
+4. I provide basic version, less pain in creating custom header, really.
+5. Yes, you can modify or add functionality as your need.
 
 # Usage:
 1. Once BootUp there will be new AP "DuinoMinerConfig", just connect to it.
