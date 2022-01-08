@@ -16,10 +16,11 @@ https://github.com/ricaun/arduino-DuinoCoin <br> https://github.com/JK-Rolling/D
 
 # Disclaimer:
 1. This is very early release version, hiccups, ups and down are expected.
-2. There is no input validation in UI WebConfig
+2. There is no input validation in UI WebConfig.
 3. I dont use external services for saving credential, completely local on your device.
 4. I provide basic version, less pain in creating custom header, really.
 5. Yes, you can modify or add functionality as your need.
+6. There is no interrupt priority provided by manufacturers, it means sometimes reset button will fail. Press multiple time will solve this. 
 
 # Usage:
 1. Once BootUp there will be new AP "DuinoMinerConfig", just connect to it.
@@ -29,7 +30,12 @@ https://github.com/ricaun/arduino-DuinoCoin <br> https://github.com/JK-Rolling/D
 3. Custom pool format IP:PORT (example 87.208.19.163:6006). No input validation yet.
 4. Captive Window will close in 30 Second after saving config, config via browser need close manually.
 5. Auto Load Config, Auto mining after restart/power off, Auto recover Pool included.
-6. enjoy.
+6. AP "DuinoMinerConfig" only show if reset setting success or there is no saved config. Upon complete setting, it will mining in background as usual.
+7. enjoy.
+
+# Reset Button:
+1. Connect your momentary push button GND to pin D5 (or any pin support external interrupt, addjust your code then).
+2. After success reset settings
 
 # TODO:
 1. Custom Styling
