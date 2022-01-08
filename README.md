@@ -15,6 +15,8 @@ https://github.com/ricaun/arduino-DuinoCoin <br> https://github.com/JK-Rolling/D
    - https://github.com/esp8266/Arduino
    - https://github.com/bblanchon/ArduinoJson (v6)
    - https://github.com/tzapu/WiFiManager
+3. Clone / download my repo, and flash it to your board.
+4. Have fun.
 
 # Disclaimer:
 1. This is very early release version, hiccups, ups and down are expected.
@@ -27,7 +29,7 @@ https://github.com/ricaun/arduino-DuinoCoin <br> https://github.com/JK-Rolling/D
 
 # Usage:
 1. Once BootUp there will be new AP "DuinoMinerConfig", just connect to it.
-    - If your device is support Captive, There will be direct popup and fill up your config (Internet connection, Duino Coin, and optional custom mining pool)
+    - If your device is support Captive, There will be direct popup and fill up your config (Internet connection, Duino Coin, and optional custom mining pool).
     - If your device is not support Captive, do point 1 above, then goto browser type <b>192.168.4.1</b> as default address configuration, screen config will show up.
 2. if Duino Coin Username is missing, there will not save any setting. No input validation yet.
 3. Custom pool format IP:PORT (example 87.208.19.163:6006). No input validation yet.
