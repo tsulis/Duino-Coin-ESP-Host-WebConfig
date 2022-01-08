@@ -24,7 +24,7 @@ https://github.com/ricaun/arduino-DuinoCoin <br> https://github.com/JK-Rolling/D
 # Usage:
 1. Once BootUp there will be new AP "DuinoMinerConfig", just connect to it.
     - If your device is support Captive, There will be direct popup and fill up your config (Internet connection, Duino Coin, and optional custom mining pool)
-    - If your device is not support Captive, do point 1 above, the goto browser type 192.168.4.1 as default address configuration, screen config will show up.
+    - If your device is not support Captive, do point 1 above, then goto browser type 192.168.4.1 as default address configuration, screen config will show up.
 2. if Duino Coin Username is missing, there will not save any setting. No input validation yet.
 3. Custom pool format IP:PORT (example 87.208.19.163:6006). No input validation yet.
 4. Captive Window will close in 30 Second after saving config, config via browser need close manually.
