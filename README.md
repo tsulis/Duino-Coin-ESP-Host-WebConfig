@@ -2,7 +2,7 @@
 
 <img src="img/Screen Shot 2022-01-03 at 23.10.54.png" alt="DuinoWebConfig" width="100%">
 
-Currently Support ESP8266 (tested Wemos D1 Mini). This is basic version, easy to follow or modify.
+Currently Support ESP8266 (tested with Wemos D1 Mini).
 
 Compatible out-of-the-box with installed slave miner from these repo:
 
@@ -10,7 +10,7 @@ https://github.com/ricaun/arduino-DuinoCoin <br> https://github.com/JK-Rolling/D
 
 
 # Instalation:
-1. You must install and able to run one of those repo above (instalation guide in their repo).
+1. You must install and able to run one of those repo above (installation guide in their repo).
 2. Add these library to your Arduino IDE :
   - https://github.com/esp8266/Arduino
   - https://github.com/bblanchon/ArduinoJson (v6)
@@ -20,9 +20,10 @@ https://github.com/ricaun/arduino-DuinoCoin <br> https://github.com/JK-Rolling/D
 1. This is very early release version, hiccups, ups and down are expected.
 2. There is no input validation in UI WebConfig.
 3. I dont use external services for saving credential, completely local on your device.
-4. I provide basic version, less pain in creating custom header, really.
+4. I provide basic version, less pain in creating custom header, really. Easy to follow or modify (custom header and styling is not included in this repo). On success build, style will slightly different with attached screen.
 5. Yes, you can modify or add functionality as your need.
-6. There is no interrupt priority provided by manufacturers, it means sometimes reset button will fail. Press multiple time will solve this. 
+6. There is no interrupt priority provided by manufacturers, it means sometimes reset button will fail. Press multiple time will solve this.
+
 
 # Usage:
 1. Once BootUp there will be new AP "DuinoMinerConfig", just connect to it.
