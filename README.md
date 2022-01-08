@@ -1,6 +1,6 @@
 # Duino Coin ESP Host WebConfig
 
-<img src="res/Screen Shot 2022-01-03 at 23.10.54" alt="DuinoWebConfig" width="100%">
+<img src="img/Screen Shot 2022-01-03 at 23.10.54.png" alt="DuinoWebConfig" width="100%">
 
 Currently Support ESP8266 (tested Wemos D1 Mini). This is basic version, easy to follow or modify.
 
