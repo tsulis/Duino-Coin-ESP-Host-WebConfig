@@ -35,12 +35,19 @@
 #endif
 
 void wire_setup();
+
 void wire_readAll();
+
 boolean wire_exists(byte address);
+
 void wire_sendJob(byte address, String lastblockhash, String newblockhash, int difficulty);
+
 void Wire_sendln(byte address, String message);
+
 void Wire_send(byte address, String message);
+
 String wire_readLine(int address);
+
 boolean wire_runEvery(unsigned long interval);
 
 unsigned long keyPrevMillis = 0;

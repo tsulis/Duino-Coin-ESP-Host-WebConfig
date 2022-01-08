@@ -16,47 +16,41 @@
 
 #include <ArduinoJson.h>
 
-const char * urlPool = "https://server.duinocoin.com/getPool";
+const char *urlPool = "https://server.duinocoin.com/getPool";
 
-void UpdateHostPort(String input){
-  
-  DynamicJsonDocument doc(256);
-  deserializeJson(doc, input);
+void UpdateHostPort(String input) {
 
-  const char* name = doc["name"];
-  const char* ip = doc["ip"];
-  int port = doc["port"];
+    DynamicJsonDocument doc(256);
+    deserializeJson(doc, input);
 
-  Serial.println("[ ]Update " + String(name) + " " + String(ip) + " " + String(port));
-  SetHostPort(String(ip), port);
+    const char *name = doc["name"];
+    const char *ip = doc["ip"];
+    int port = doc["port"];
+
+    Serial.println("[ ]Update " + String(name) + " " + String(ip) + " " + String(port));
+    SetHostPort(String(ip), port);
 }
 
-void UpdatePool()
-{
-  String input = httpGetString(urlPool);
-  if (input == "") return;
-  
-  UpdateHostPort(input);
+void UpdatePool() {
+    String input = httpGetString(urlPool);
+    if (input == "") return;
+
+    UpdateHostPort(input);
 }
 
-String httpGetString(String URL)
-{
-  String payload = "";
-  WiFiClientSecure client;
-  client.setInsecure();
-  HTTPClient http;
-  if (http.begin(client, URL))
-  {
-    int httpCode = http.GET();
-    if (httpCode == HTTP_CODE_OK)
-    {
-      payload = http.getString();
+String httpGetString(String URL) {
+    String payload = "";
+    WiFiClientSecure client;
+    client.setInsecure();
+    HTTPClient http;
+    if (http.begin(client, URL)) {
+        int httpCode = http.GET();
+        if (httpCode == HTTP_CODE_OK) {
+            payload = http.getString();
+        } else {
+            Serial.printf("[HTTP] GET... failed, error: %s\n", http.errorToString(httpCode).c_str());
+        }
+        http.end();
     }
-    else
-    {
-      Serial.printf("[HTTP] GET... failed, error: %s\n", http.errorToString(httpCode).c_str());
-    }
-    http.end();
-  }
-  return payload;
+    return payload;
 }

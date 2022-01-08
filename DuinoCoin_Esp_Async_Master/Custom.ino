@@ -143,7 +143,7 @@ void saveParamCallback() {
     ducouser = getParam("c_duco_userId");
     ducoUserPool = getParam("c_duco_manual_pool");
     ducoUserPool.trim();
-    
+
     bool checkUser = (ducouser == "" || ducouser == NULL) ? true : false;
     bool checkManualPool = (ducoUserPool == "" || ducoUserPool == NULL) ? true : false;
 
