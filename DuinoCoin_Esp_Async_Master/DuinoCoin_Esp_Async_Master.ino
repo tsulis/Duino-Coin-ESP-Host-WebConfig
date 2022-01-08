@@ -4,11 +4,13 @@
   by Luiz H. Cassettari
 
   DuinoWebConfig added by Triyatno Sulis
+  
+  https://github.com/tsulis/Duino-Coin-ESP-Host-WebConfig
 
   
 */
 
-// You will need install library
+// You need install library
 // 1. https://github.com/esp8266/Arduino
 // 2. https://github.com/bblanchon/ArduinoJson
 // 3. https://github.com/tzapu/WiFiManager
