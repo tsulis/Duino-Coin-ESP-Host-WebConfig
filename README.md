@@ -4,7 +4,7 @@
 
 Currently Support ESP8266 (tested Wemos D1 Mini). This is basic version, easy to follow or modify.
 
-Compatible out-of-the-box with installed slave from this repo:
+Compatible out-of-the-box with installed slave miner from these repo:
 
 https://github.com/ricaun/arduino-DuinoCoin <br> https://github.com/JK-Rolling/DuinoCoinI2C
 
