@@ -2,7 +2,7 @@
 
 <img src="img/Screen Shot 2022-01-03 at 23.10.54.png" alt="DuinoWebConfig" width="100%">
 
-Currently Support ESP8266 (tested with Wemos D1 Mini).
+Currently Support ESP8266 (tested with Wemos D1 Mini). DUINO COIN 2.7x
 
 Compatible out-of-the-box with installed slave miner from these repo:
 
